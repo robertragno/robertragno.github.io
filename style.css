@@ -39,6 +39,12 @@ li {
       padding: 0px 10px 0px 10px;
       font-family: sans-serif;
   }
+button {
+      background: #c15961;
+      color: white;
+      border:0;
+      font-size:14px;
+}
 .about {
 	 max-width: 600px;
 	 margin: 0 auto;
