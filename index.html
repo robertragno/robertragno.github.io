@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html>
-<link href="style.css" rel="stylesheet">
 <head>
+	<title>Robert Ragno</title>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Robert Ragno</title>
-<style>
-</style>
+
+<link href="style.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+
+<script>
+    function slideChange() {
+        var $active = $('div#slideshow IMG.active');
+        var $next = $active.next();    
+
+        $next.addClass('active');
+
+        $active.removeClass('active');
+    }
+
+    $(function() {
+        setInterval( "slideChange()", 5000 );
+    });
+</script>
 </head>
 
 <body>
-  <img src="https://media.licdn.com/media/p/8/005/071/260/2b2829e.jpg">
-  <p>Hi! I'm Robert, a SF Bay area tech enthusiast. Say hello!</p>
-  <input type="email" placeholder="Your email">
-  <input type="submit">
+
+<header>
+	<img src="https://media.licdn.com/media/p/8/005/071/260/2b2829e.jpg">
+	<h1>Robert Ragno</h1>
+	<ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#slides">Slides</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+<div class="about" id="about">
+  <h2>About</h2>
+  <p>Robert has grown up around technology his whole life having been raised in Silicon Valley. Ever since an early age he was fascinated with the inner-workings of all things mechanical and electrical which led to his current intersts or computers, automobiles, and bicycles. He attended the University of Colorado and graduated with a degree in Film Studies and minor in Technology, Arts, and Meida. When he is isn't at work or tinkering on something Robert can be found disconectted from technolofy out on a ride.</p>
+</div><br />
+
+<div class="container">
+	<h2>Slideshow</h2>
+<div id="slideshow">
+ 	<img src="assets/test1.jpg" class="active" />
+ 	<img src="assets/test2.jpg" />
+ 	<img src="assets/test3.jpg" />
+ </div><br />
+</div>
+
+ <div class="contact" id="contact">
+ 	You can reach me via any of at the following:
+ 	<ul>
+      <li><a href="http://www.linkedin.com/in/robertragno"><img src="assets/linkedin.png"></a></li>
+      <li><a href="mailto:robertragno+site@gmaildotcom"><img src="assets/email.png"></a></li>
+      <li><a href="http://www.facebook.com/robert.ragno"><img src="assets/facebook.png"></a></li>
+    </ul>
+ </div>
+
 </body>
