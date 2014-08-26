@@ -62,13 +62,13 @@ button {
   	transform: translate(-50%,0);
 }
 .active{
-        z-index:99;
+  z-index:99;
     }
 .container {
 	height:440px;
     }
 .bubble {
-  z-index:3;
+  z-index:50;
   float:right;
   font-size:10px;
   position:relative;
